@@ -1,0 +1,21 @@
+{
+  "name": "cloud-landing-page",
+  "version": "1.0.0",
+  "description": "cloud hosting landing page",
+  "main": "main.js",
+  "scripts": {
+    "start": "parcel serve ./src/index.html --no-cache",
+    "build": "parcel build ./src/index.html --no-cache"
+  },
+  "keywords": [
+    "javascript",
+    "html",
+    "scss"
+  ],
+  "author": "rafli",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel": "^2.0.0-beta.1",
+    "sass": "^1.29.0"
+  }
+}
