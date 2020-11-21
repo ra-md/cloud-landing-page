@@ -39,6 +39,10 @@ a {
 
   &__brand {
     color: white;
+
+    &--black {
+      color: black;
+    }
   }
 
   &__nav ul {
@@ -48,10 +52,6 @@ a {
   &__nav li {
     list-style: none;
     color: $gray-1;
-
-    &:first-child {
-      color: white;
-    }
   }
 
   &__link {
@@ -240,6 +240,10 @@ a {
   text-align: center;
   padding: 2em;
 
+  &--white {
+    background: white;
+  }
+
   h1 {
     margin-bottom: .5em;
   }
@@ -282,5 +286,37 @@ a {
     &--active {
       color: black;
     }
+  }
+}
+
+// Pricing
+.pricing {
+  text-align: center;
+  padding-top: 5em;
+  background: linear-gradient(113.46deg, #E5E5E5 -27.08%, #FFFFFF 100%);
+
+  &__cards {
+    margin-top: 3em;
+    display: grid;
+    grid-gap: 3em;
+    grid-template-columns: $grid-3x1fr;
+  }
+
+  &__cardValue {
+    margin: 3rem 0;
+  }
+
+  &__cardList {
+    margin: 0 3em;
+    margin-bottom: 3em;
+  }
+
+  &__cardListItem {
+    color: $gray-1;
+    margin-bottom: 1.5em;
+  }
+
+  &__information {
+    padding: 3em 0;
   }
 }
