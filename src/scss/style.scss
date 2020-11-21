@@ -23,6 +23,12 @@ a {
   color: $gray-1;
 }
 
+code, pre {
+  background: #333;
+  color: #fff;
+  padding: .75em;
+}
+
 // Header
 .site-header {
   position: absolute;
@@ -319,4 +325,80 @@ a {
   &__information {
     padding: 3em 0;
   }
+}
+
+// Docs
+.docs {
+  padding-top: 6em;
+
+  a {
+    color: inherit;
+  }
+
+  button {
+    margin: 0 .75em;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 1em;
+  }
+
+  .alert {
+    margin-bottom: 1.5em;
+  }
+
+  .card {
+    margin: 1.5em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__sidebarList {
+    list-style: none;
+    margin-bottom: 3em;
+  }
+
+  &__sidebarListItem {
+    margin-left: 1em;
+    margin-bottom: .75em;
+    color: $gray-1;
+
+    &:hover {
+      color: black;
+    }
+
+    &--active {
+      color: black;
+    }
+  }
+
+  &__mainInstaller {
+    display: grid;
+    grid-template-columns: $grid-2x1fr;
+    grid-gap: 1.5em;
+  }
+
+  &__mainInstallerIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5em;
+
+    i {
+      margin-right: .3em;
+    }
+  }
+
+  &__mainPlatform {
+    margin-bottom: 1.5em;
+
+    p {
+      color: black;
+    }
+  }
+
 }

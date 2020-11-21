@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="Description" content="Cloud hosting platform">
+  <meta name="theme-color" content="#000000"/>
+  <title>Cloud - Documentation</title>
+  <link rel="stylesheet" href="scss/style.scss">
+  <script src="https://kit.fontawesome.com/12ce9767d3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <div class="site-header__brand site-header__brand--black">
+        <h1>Cloud</h1>
+      </div>
+      <!-- Nav -->
+      <nav class="site-header__nav">
+        <ul>
+          <li>
+            <a href="index.html" class="site-header__link">Home</a>
+          </li>
+          <li>
+            <a href="pricing.html" class="site-header__link">Pricing</a>
+          </li>
+          <li>
+            <a href="docs.html" class="site-header__link site-header__link--active">Documentation</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="site-header__auth">
+        <a href="#">Login</a>
+        <a href="#" class="btn">Signin</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Docs -->
+  <section class="docs">
+    <div class="container">
+      <div class="docs__sidebar">
+        <ul class="docs__sidebarList">
+          <h1>Essentials</h1>
+          <li class="docs__sidebarListItem"><a href="#">Introduction</a></li>
+          <li class="docs__sidebarListItem"><a href="#">About Cloud</a></li>
+          <li class="docs__sidebarListItem docs__sidebarListItem--active"><a href="#">Installation</a></li>
+        </ul>
+        <ul class="docs__sidebarList">
+          <h1>Deployment</h1>
+          <li class="docs__sidebarListItem"><a href="#">Setting up a container</a></li>
+          <li class="docs__sidebarListItem"><a href="#">Using the CLI</a></li>
+          <li class="docs__sidebarListItem"><a href="#">Managing resources</a></li>
+          <li class="docs__sidebarListItem"><a href="#">Upgrade & Downgrade</a></li>
+        </ul>
+      </div>
+      <div class="docs__main">
+        <div class="alert">
+          <i class="fas fa-info text-size-2"></i>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.
+        </div>
+        <h1>Lorem ipsum dolor.</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima totam magni eius vitae velit id, atque veritatis! At, vero porro.</p>
+        <div class="docs__mainInstaller">
+          <div class="card card--outline">
+            <div class="docs__mainInstallerIcon">
+              <i class="fab fa-apple text-size-5"></i>
+              <h1>Mac</h1>
+            </div>
+            <button class="btn">Download the installer</button>
+          </div>
+          <div class="card card--outline">
+            <div class="docs__mainInstallerIcon">
+              <i class="fab fa-windows text-size-5"></i>
+              <h1>Windows</h1>
+            </div>
+            <div>
+              <button class="btn">32-bit installer</button>
+              <button class="btn">64-bit installer</button>
+            </div>
+          </div>
+        </div>
+        <div class="docs__mainPlatform">
+          <p>Homebrew</p>
+          <pre><code>$ brew install cloud-cli</code></pre>
+        </div>
+        <div class="docs__mainPlatform">
+          <p>NPM</p>
+          <pre><code>$ npm install cloud-cli</code></pre>
+        </div>
+        <div class="docs__mainPlatform">
+          <p>Ubuntu</p>
+          <pre><code>$ sudo snap install cloud-cli</code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <h1 class="text-size-4">Cloud</h1>
+      <div class="site-footer__socialMedia">
+        <i class="fab fa-github"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-youtube"></i>
+      </div>
+      <div class="site-footer__menu">
+        <ul>
+          <li><a href="index.html" class="site-footer__menuLink">Home</a></li>
+          <li><a href="docs.html" class="site-footer__menuLink site-footer__menuLink--active">Documentation</a></li>
+          <li><a href="pricing.html" class="site-footer__menuLink">Pricing</a></li>
+        </ul>
+      </div>
+      <p>Copyright &copy; 2020 Cloud Inc. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
