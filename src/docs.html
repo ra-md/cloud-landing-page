@@ -15,11 +15,14 @@
   <!-- Header -->
   <header class="site-header">
     <div class="container">
-      <div class="site-header__brand site-header__brand--black">
+      <div class="site-header__brand">
         <h1>Cloud</h1>
       </div>
       <!-- Nav -->
       <nav class="site-header__nav">
+        <button class="site-header__navClose hide-on-md">
+          <i class="fas fa-times"></i>
+        </button>
         <ul>
           <li>
             <a href="/" class="site-header__link">Home</a>
@@ -31,16 +34,22 @@
             <a href="docs.html" class="site-header__link site-header__link--active">Documentation</a>
           </li>
         </ul>
+        <div class="site-header__auth">
+          <a href="#">Login</a>
+          <a href="#" class="btn">Signin</a>
+        </div>
       </nav>
-      <div class="site-header__auth">
-        <a href="#">Login</a>
-        <a href="#" class="btn">Signin</a>
-      </div>
+      <button class="site-header__openNav hide-on-md">
+        <i class="fas fa-bars"></i>
+      </button>
     </div>
   </header>
 
   <!-- Docs -->
   <section class="docs">
+    <button class="docs__btnOpen hide-on-md text-size-2">
+      <i class="fas fa-bars"></i>
+    </button>
     <div class="container">
       <div class="docs__sidebar">
         <ul class="docs__sidebarList">
@@ -56,6 +65,9 @@
           <li class="docs__sidebarListItem"><a href="#">Managing resources</a></li>
           <li class="docs__sidebarListItem"><a href="#">Upgrade & Downgrade</a></li>
         </ul>
+        <button class="docs__btnClose text-size-2">
+          <i class="fas fa-times"></i>
+        </button>
       </div>
       <div class="docs__main">
         <div class="alert">
@@ -78,21 +90,21 @@
               <i class="fab fa-windows text-size-5"></i>
               <h1>Windows</h1>
             </div>
-            <div>
+            <div class="docs__cardButtons">
               <button class="btn">32-bit installer</button>
               <button class="btn">64-bit installer</button>
             </div>
           </div>
         </div>
-        <div class="docs__mainPlatform">
+        <div class="docs__mainAlternativeInstaller">
           <p>Homebrew</p>
           <pre><code>$ brew install cloud-cli</code></pre>
         </div>
-        <div class="docs__mainPlatform">
+        <div class="docs__mainAlternativeInstaller">
           <p>NPM</p>
           <pre><code>$ npm install cloud-cli</code></pre>
         </div>
-        <div class="docs__mainPlatform">
+        <div class="docs__mainAlternativeInstaller">
           <p>Ubuntu</p>
           <pre><code>$ sudo snap install cloud-cli</code></pre>
         </div>
@@ -120,6 +132,6 @@
     </div>
   </footer>
 
-  <script src="main.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

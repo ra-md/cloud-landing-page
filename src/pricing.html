@@ -15,11 +15,14 @@
   <!-- Header -->
   <header class="site-header">
     <div class="container">
-      <div class="site-header__brand site-header__brand--black">
+      <div class="site-header__brand">
         <h1>Cloud</h1>
       </div>
       <!-- Nav -->
       <nav class="site-header__nav">
+        <button class="site-header__navClose hide-on-md">
+          <i class="fas fa-times"></i>
+        </button>
         <ul>
           <li>
             <a href="/" class="site-header__link">Home</a>
@@ -31,11 +34,14 @@
             <a href="docs.html" class="site-header__link">Documentation</a>
           </li>
         </ul>
+        <div class="site-header__auth">
+          <a href="#">Login</a>
+          <a href="#" class="btn">Signin</a>
+        </div>
       </nav>
-      <div class="site-header__auth">
-        <a href="#">Login</a>
-        <a href="#" class="btn">Signin</a>
-      </div>
+      <button class="site-header__openNav hide-on-md">
+        <i class="fas fa-bars"></i>
+      </button>
     </div>
   </header>
 
@@ -100,6 +106,6 @@
     </div>
   </footer>
 
-  <script src="main.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

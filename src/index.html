@@ -20,6 +20,9 @@
       </div>
       <!-- Nav -->
       <nav class="site-header__nav">
+        <button class="site-header__navClose hide-on-md">
+          <i class="fas fa-times"></i>
+        </button>
         <ul>
           <li>
             <a href="/" class="site-header__link site-header__link--active">Home</a>
@@ -31,11 +34,14 @@
             <a href="docs.html" class="site-header__link">Documentation</a>
           </li>
         </ul>
+        <div class="site-header__auth">
+          <a href="#">Login</a>
+          <a href="#" class="btn">Signin</a>
+        </div>
       </nav>
-      <div class="site-header__auth">
-        <a href="#">Login</a>
-        <a href="#" class="btn">Signin</a>
-      </div>
+      <button class="site-header__openNav hide-on-md">
+        <i class="fas fa-bars"></i>
+      </button>
     </div>
   </header>
 
@@ -54,7 +60,7 @@
   <!-- Features -->
   <section class="features">
     <div class="container">
-      <h1 class="text-size-4">Powerful Features</h1>
+      <h1 class="text-size-4 features__heading">Powerful Features</h1>
       <h2 class="features__subheading text-size-2">Build by developers.</h2>
       <div class="features__list">
         <div class="features__listItem">
@@ -130,15 +136,15 @@
     <div class="stats__list">
       <div class="container">
         <div class="stats__listItem">
-          <h1 class="text-size-5">987 TB</h1>
+          <h1 class="text-size-5 stats__itemValue">987 TB</h1>
           <p class="stats__itemName">Published</p>
         </div>
         <div class="stats__listItem">
-          <h1 class="text-size-5">10,349,405</h1>
+          <h1 class="text-size-5 stats__itemValue">10,349,405</h1>
           <p class="stats__itemName">Deployments</p>
         </div>
         <div class="stats__listItem">
-          <h1 class="text-size-5">2,343,265</h1>
+          <h1 class="text-size-5 stats__itemValue">2,343,265</h1>
           <p class="stats__itemName">Projects</p>
         </div>
       </div>
@@ -198,6 +204,6 @@
     </div>
   </footer>
 
-  <script src="main.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
