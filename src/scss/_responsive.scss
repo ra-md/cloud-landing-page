@@ -86,11 +86,11 @@
     }
 
     &::after {
-      content: '';
-      height: 3em;
+      content: "";
+      height: 6em;
       width: 100%;
       position: absolute;
-      bottom: 43%;
+      bottom: 35%;
       background: white;
       transform: skewY(-4deg);
       z-index: -10;
