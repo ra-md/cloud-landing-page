@@ -69,6 +69,23 @@ button {
     color: $gray-1;
   }
 
+  &__openNav {
+    color: black;
+
+    &--white {
+      color: white;
+    }
+  }
+
+  &__navClose {
+    position: absolute;
+    right: 1em;
+  }
+
+  &__openNav, &__navClose {
+    font-size: 1.5rem;
+  }
+
   &__link {
     padding: 0 .75em;
     margin: 0 .75em;
