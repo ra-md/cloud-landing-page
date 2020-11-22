@@ -350,7 +350,11 @@ button {
   }
 
   button {
-    margin: 0 .75em;
+    margin: .75em;
+  }
+
+  &__cardButtons {
+    text-align: center;
   }
 
   .container {
