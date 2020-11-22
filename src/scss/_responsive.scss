@@ -52,13 +52,17 @@
       width: auto;
     }
 
-    &__openNav, &__navClose {
-      font-size: 1.5rem;
+    &__openNav {
+      color: white;
     }
 
     &__navClose {
       position: absolute;
       right: 1em;
+    }
+
+    &__openNav, &__navClose {
+      font-size: 1.5rem;
     }
 
     &__nav ul {
