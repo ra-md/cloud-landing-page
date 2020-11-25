@@ -7,12 +7,15 @@ function menuInitiator({ menu, btn_open, btn_close, menu_item }) {
     menu.classList.remove('menu--active');
   }
 
-  btn_open.addEventListener('click', openMenu);
-  btn_close.addEventListener('click', closeMenu);
+  if (btn_open) {
+    btn_open.addEventListener('click', openMenu);
+    btn_close.addEventListener('click', closeMenu);
 
-  menu_item.forEach(item => {
-    item.addEventListener('click', closeMenu);
-  });
+    menu_item.forEach(item => {
+      item.addEventListener('click', closeMenu);
+    });
+  }
+
 }
 
 menuInitiator({
@@ -22,6 +25,7 @@ menuInitiator({
   menu_item: document.querySelectorAll('.site-header__link'),
 });
 
+// BUG
 menuInitiator({
   menu: document.querySelector('.docs__sidebar'),
   btn_open: document.querySelector('.docs__btnOpen'),
